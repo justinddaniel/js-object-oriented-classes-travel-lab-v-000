@@ -5,10 +5,7 @@ class Driver {
     this.name = name
     this.startDate = date.setFullYear(year)
   }
-  yearsExperienceFromBeginningOf(endDate) {
-    let endyears = endDate - 1970;
-    let startyears = this.startdate
-    return endDate - this.startDate;}
+  yearsExperienceFromBeginningOf(endDate) {return endDate - this.startDate;}
 }
 
 class Route {
