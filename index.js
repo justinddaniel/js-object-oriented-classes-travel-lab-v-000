@@ -1,7 +1,8 @@
 class Driver {
   constructor(name, startDate) {
+    let msec = Date.parse(startDate)
     this.name = name
-    this.startDate = setFullYear
+    this.startDate = new Date(msec)
   }
   yearsExperienceFromBeginningOf(endDate) {return endDate - this.startDate;}
 }
