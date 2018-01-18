@@ -1,11 +1,9 @@
 class Driver {
   constructor(name, startDate) {
-    let year = startDate.slice(-1, -5);
-    let date = new Date();
     this.name = name;
-    this.startDate = date.setFullYear(year);
+    this.startDate = new Date(startDate)
   }
-  yearsExperienceFromBeginningOf(endDate) {return endDate - this.startDate;}
+  yearsExperienceFromBeginningOf(year) {return endDate - this.startDate;}
 }
 
 class Route {
