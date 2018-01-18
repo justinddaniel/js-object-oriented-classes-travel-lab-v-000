@@ -1,10 +1,13 @@
 class Driver {
   constructor(name, startDate) {
-    let date = Date.parse(startDate)
+    let date = startDate.slice(-1, -5)
     this.name = name
     this.startDate = new Date(date)
   }
-  yearsExperienceFromBeginningOf(endDate) {return endDate - this.startDate;}
+  yearsExperienceFromBeginningOf(endDate) {
+    let endyears = endDate - 1970; 
+    let startyears = this.startdate
+    return endDate - this.startDate;}
 }
 
 class Route {
